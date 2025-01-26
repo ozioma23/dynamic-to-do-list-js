@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function addTask() {
         // Retrieve and trim the value from the input field
         const taskText = taskInput.value.trim();
+        
 
 
         // Check if taskText is empty
