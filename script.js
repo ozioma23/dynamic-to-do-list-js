@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Create a new <li> element and set its textContent to taskText
         const newTask = document.createElement('li'); // Create a new list item
         newTask.textContent = taskText;  //Set the task text
+        newTask.classList.add('task-item'); // Add class to list item for styling
 
          // Create the remove button
         const removeButton = document.createElement('button');
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('tasks', JSON.stringify(updatedTasks)); // Save the updated tasks back to Local Storage
     }
 
-    
+
     addButton.addEventListener('click', addTask);
 
     taskInput.addEventListener('keypress', function (event) {
